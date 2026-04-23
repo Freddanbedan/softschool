@@ -3,97 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Softschool hjälper dig planera studier, hålla koll på uppgifter och skapa en tydlig veckostruktur.">
     <title>Softschool</title>
-
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="soft.css">
-
-    
 </head>
-
 <body>
-
-    
     <header>
-        <h1>Softschool</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="uppgifter.html">Uppgifter</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a class="brand" href="softschool.html">Softschool</a>
+            <nav>
+                <ul>
+                    <li><a href="softschool.html">Hem</a></li>
+                    <li><a href="uppgifter.html">Uppgifter</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    
     <main>
-
-       
         <section class="hero">
-            <h2>Planera dina studier smartare</h2>
-            <p>Håll koll på uppgifter och deadlines på ett enkelt sätt.</p>
+            <div class="hero-copy">
+                <p class="eyebrow">Studieplanering för elever</p>
+                <h1>Planera dina studier smartare</h1>
+                <p>Håll koll på uppgifter, deadlines och veckans schema på ett ställe som känns tydligt och enkelt.</p>
+                <a class="button" href="#tasks">Se dina uppgifter</a>
+            </div>
+            <div class="hero-cards">
+                <article class="hero-card">
+                    <h3>Överblick</h3>
+                    <p>Få en snabb bild av vad som väntar under veckan.</p>
+                </article>
+                <article class="hero-card">
+                    <h3>Prioritering</h3>
+                    <p>Fokusera på rätt uppgifter med tydliga deadlines.</p>
+                </article>
+                <article class="hero-card">
+                    <h3>Balans</h3>
+                    <p>Planera studier och fritid utan stress.</p>
+                </article>
+            </div>
         </section>
 
-        
-        <section class="tasks">
-            <h2>Mina uppgifter</h2>
-
-            <ul>
-                <li>Matteprov – 12 mars</li>
-                <li>Historiauppgift – 15 mars</li>
-                <li>Engelska läxa – 18 mars</li>
+        <section class="tasks" id="tasks">
+            <div class="section-header">
+                <h2>Mina uppgifter</h2>
+                <p>Här ser du aktuella uppgifter och när de ska vara klara.</p>
+            </div>
+            <ul class="task-list">
+                <li class="task-item">
+                    <strong>Matteprov</strong>
+                    <span>12 mars</span>
+                </li>
+                <li class="task-item">
+                    <strong>Historiauppgift</strong>
+                    <span>15 mars</span>
+                </li>
+                <li class="task-item">
+                    <strong>Engelska läxa</strong>
+                    <span>18 mars</span>
+                </li>
             </ul>
         </section>
 
-        
         <section class="schedule">
-            <h2>Veckoschema</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dag</th>
-                        <th>Ämne</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Måndag</td>
-                        <td>Matematik</td>
-                    </tr>
-                    <tr>
-                        <td>Tisdag</td>
-                        <td>Historia</td>
-                    </tr>
-                    <tr>
-                        <td>Onsdag</td>
-                        <td>Engelska</td>
-                    </tr>
-                    <tr>
-                        <td>Torsdag</td>
-                        <td>Biologi</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="2">Totalt: 4 lektioner</td>
-                    </tr>
-                </tfoot>
-            </table>
-
+            <div class="section-header">
+                <h2>Veckoschema</h2>
+                <p>En tydlig översikt av ämnen och dagar gör planeringen enklare.</p>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dag</th>
+                            <th>Ämne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Måndag</td>
+                            <td>Matematik</td>
+                        </tr>
+                        <tr>
+                            <td>Tisdag</td>
+                            <td>Historia</td>
+                        </tr>
+                        <tr>
+                            <td>Onsdag</td>
+                            <td>Engelska</td>
+                        </tr>
+                        <tr>
+                            <td>Torsdag</td>
+                            <td>Biologi</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Totalt: 4 lektioner</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </section>
-
     </main>
 
-    
     <footer>
-        <p>2026 softschool</p>
+        <p>© 2026 Softschool</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
