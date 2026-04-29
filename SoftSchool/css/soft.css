@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -13,32 +18,47 @@ body {
     line-height: 1.6;
 }
 
-
-header {
-    background-color: #4a6cf7;
-    color: white;
+main {
+    flex: 1;
     padding: 20px;
-    text-align: center;
 }
 
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+}
+
+.header-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4a6cf7;
+    text-decoration: none;
+}
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
+    gap: 24px;
 }
 
 nav a {
-    color: white;
+    color: #4a5568;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-
 nav a:hover {
-    text-decoration: underline;
+    color: #4a6cf7;
 }
 
 
@@ -65,8 +85,8 @@ main {
     background-image: url('study.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(5px) saturate(1.1);
-    transform: scale(1.12);
+    filter: blur(2px) saturate(1.1);
+    transform: scale(1.05);
     z-index: 0;
 }
 
@@ -163,10 +183,11 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #222;
-    color: white;
-    margin-top: 20px;
+    padding: 18px 24px;
+    background-color: #2d3748;
+    color: #e2e8f0;
+    margin-top: auto;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
