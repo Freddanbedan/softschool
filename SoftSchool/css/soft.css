@@ -82,7 +82,7 @@ main {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('study.jpg');
+    background-image: url('../images/study.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(0px) saturate(1.15);
